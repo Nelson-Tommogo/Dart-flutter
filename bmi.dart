@@ -1,5 +1,5 @@
 void main() {
-  double weight = 56;
+  double weight = 108;
   double height = 1.75;
   double bmi = weight / (height * height);
 
@@ -12,7 +12,7 @@ void main() {
   } else if (bmi >= 18.9 && bmi <= 30.9) {
     status = "Overweight";
   } else {
-    status = "Obesity";
+    status = "Obest";
   }
 
   print("BMI $bmi: Status: $status");
