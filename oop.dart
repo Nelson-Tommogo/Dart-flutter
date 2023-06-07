@@ -4,13 +4,11 @@ mixin teacher {
     print( ' This is the function of the mixin teacher ' ) ;
   }
 }
-// mixin with name ' student ' 
 mixin student { 
   void func2( ){
     print( 125 ) ;
   }
 }
-// mixin type used with keyword
 class Principal with teacher, student{ 
   @override
   void func( ) {
