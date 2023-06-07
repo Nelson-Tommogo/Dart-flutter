@@ -3,7 +3,7 @@ import 'dart:io';
 void main() {
   int i, flag = 0;
 
-  print(' Enter the number : ');
+  print(' Enter any  number : ');
 
   int? n = int.parse(stdin.readLineSync()!);
 
@@ -13,9 +13,9 @@ void main() {
     print(" 1 is neither prime nor composite. ");
   } else {
     if (flag == 0)
-      print(" Number is a prime number. ");
+      print(" prime number. ");
     else
-      print(" Number is not a prime number. ");
+      print(" not a prime number. ");
   }
 }
 
