@@ -1,66 +1,35 @@
-import 'dart:io' ;
+import 'dart:io';
 
-void main( )
+void main() {
+  int i, flag = 0;
 
-{
+  print(' Enter the number : ');
 
-  int i, flag = 0 ;
+  int? n = int.parse(stdin.readLineSync()!);
 
-  print( ' Enter the number : ' ) ;
-
-  int? n = int.parse( stdin.readLineSync( ) ! ) ;
-
-
-
-
-  flag = prime( n ) ;
+  flag = prime(n);
 
   if (n == 1) {
-
-    print( " 1 is neither prime nor composite. " ) ;
-
+    print(" 1 is neither prime nor composite. ");
   } else {
-
     if (flag == 0)
-
-      print( " Number is a prime number. " ) ;
-
+      print(" Number is a prime number. ");
     else
-
-      print( " Number is not a prime number. " ) ;
-
+      print(" Number is not a prime number. ");
   }
-
 }
 
+int prime(int n) {
+  int flag = 0;
 
+  for (int i = 2; i <= n / 2; i++) {
+    if (n % i == 0) {
+      flag = 1;
 
-
-int prime( int n )
-
-{
-
-  int flag = 0 ;
-
-  for ( int i = 2; i <= n / 2; i++ )
-
-  {
-
-    if ( n % i == 0 )
-
-   {
-
-      flag = 1 ;
-
-      break ;
-
+      break;
     }
-
+    
   }
 
-
-
-
-  return flag ;
-
+  return flag;
 }
