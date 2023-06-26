@@ -6,9 +6,9 @@ void main() {
   double sum = sumsubj(subjectScores);
   String grade = getGrade(sum);
 
-  print('Your Average: $average');
-  print('Sum of All Subjects: $sum');
-  print('Grade: $grade');
+  print('Your Total Marks Average: $average');
+  print('Your Total Score: $sum');
+  print('Your Grade: $grade');
 }
 
 List<int> getSubjectScores() {
@@ -41,14 +41,14 @@ double sumsubj(List<int> scores) {
 String getGrade(double sum) {
   int modulus = sum.toInt() % 50;
 
-  if (modulus >= 40) {
+  if (modulus >= 80) {
     return 'A';
-  } else if (modulus >= 30) {
-    return 'B';
-  } else if (modulus >= 20) {
+  } else if (modulus >= 70) {
+    return 'A-';
+  } else if (modulus >= 60) {
+    return 'B+';
+  } else if (modulus >= 55) {
     return 'C';
-  } else if (modulus >= 10) {
-    return 'D';
   } else {
     return 'E';
   }
