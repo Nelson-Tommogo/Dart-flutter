@@ -32,6 +32,6 @@ double sumsubj(List<int> scores) {
   for (int score in scores) {
     sumsubj += score;
   }
-  double sum = sumsubj / scores.length;
+  double sum = sumsubj / 1;
   return sum;
 }
