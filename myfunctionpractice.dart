@@ -1,43 +1,36 @@
 import 'dart:io';
 
-void main( )
+void main() {
+  print(' Enter the value of maths : ');
 
-{
+  int? mat = int.parse(stdin.readLineSync()!);
 
-  print( ' Enter the value of a : ' ) ;
+  print(' Enter the value of kis: ');
 
-  int? a = int.parse( stdin.readLineSync( ) ! ) ;
+  int? kis = int.parse(stdin.readLineSync()!);
+    print(' Enter the value of english: ');
 
+  int? eng = int.parse(stdin.readLineSync()!);
+    print(' Enter the value of chemistry: ');
 
+  int? chem = int.parse(stdin.readLineSync()!);
+    print(' Enter the value of phy: ');
 
+  int? phy = int.parse(stdin.readLineSync()!);
+    print(' Enter the value of biology: ');
 
-  print( ' Enter the value of b : ' ) ;
+  int? bio = int.parse(stdin.readLineSync()!);
 
-  int? b = int.parse( stdin.readLineSync( ) ! ) ;
-
-
-
-
-  mult( a, b ) ;
-
+  double average;
+  average = (mat + eng + kis + chem + bio + phy / 6);
 }
 
+void Grade(int mat, int eng, int kis, int chem, int bio, int phy) {
+  double average;
 
+  average = mat + eng + kis + chem + bio + phy / 6;
 
+  print(' \n  Your Grade = ');
 
-void Grade( int mat, int eng, int kis, int chem, int bio, int phy )
-
-{
-
-  int average ;
-
-  average = mat + eng + kis + chem + bio + phy/6;
-
-
-
-
-  print( ' \n  Your Grade = ' ) ;
-
-  print( average ) ;
-
+  print(average);
 }
