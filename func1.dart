@@ -28,7 +28,6 @@ int prime(int n) {
 
       break;
     }
-    
   }
 
   return flag;
