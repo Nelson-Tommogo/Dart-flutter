@@ -14,18 +14,18 @@ void main() {
 
 double calculateAverage() {
   double sum = 0;
-  for (int i = 1; i <= 12; i++) {
+  for (int i = 1; i <= 20; i++) {
     print('Enter the score for subject $i:');
     int score = int.parse(stdin.readLineSync()!);
     sum += score;
   }
-  double average = sum / 12;
+  double average = sum / 20;
   return average;
 }
 
 double sumSubjects() {
   double sum = 0;
-  for (int i = 1; i <= 7; i++) {
+  for (int i = 1; i <= 20; i++) {
     print('Enter the score for subject $i:');
     int score = int.parse(stdin.readLineSync()!);
     sum += score;
@@ -36,13 +36,13 @@ double sumSubjects() {
 String getGrade(double sum) {
   int modulus = sum.toInt() % 50;
 
-  if (modulus >= 40) {
+  if (modulus >= 80) {
     return 'A';
-  } else if (modulus >= 30) {
+  } else if (modulus >= 60) {
     return 'B';
-  } else if (modulus >= 20) {
+  } else if (modulus >= 50) {
     return 'C';
-  } else if (modulus >= 10) {
+  } else if (modulus >= 40) {
     return 'D';
   } else {
     return 'E';
