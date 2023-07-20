@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void calculate() {
   int num1 = 30;
   int num2 = 33;
@@ -7,15 +9,24 @@ void calculate() {
 }
 
 void grading() {
-  int unit1 = 66;
-  int unit2 = 91;
-  int unit3 = 79;
-  int unit4 = 87;
-  int unit5 = 39;
-  int unit6 = 50;
-  int unit7 = 29;
-  int unit8 = 95;
-  int unit9 = 71;
+  print("Enter Unit1 Scores");
+  int unit1 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit2 Scores");
+  int unit2 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit3 Scores");
+  int unit3 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit4 Scores");
+  int unit4 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit5 Scores");
+  int unit5 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit6 Scores");
+  int unit6 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit7 Scores");
+  int unit7 = int.parse(stdin.readLineSync()!);
+    print("Enter Unit8 Scores");
+  int unit8 = int.parse(stdin.readLineSync()!);
+  print("Enter Unit9 Scores");
+  int unit9 = int.parse(stdin.readLineSync()!);
 
   int total =
       unit9 + unit8 + unit7 + unit6 + unit5 + unit4 + unit3 + unit2 + unit1;
