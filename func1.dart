@@ -23,12 +23,17 @@ void grading() {
   int gpa = (avarage ~/ 20);
   print("total marks is $total, Average is $avarage, and GPA is $gpa");
 }
-void bmi(){
-  
+
+void bmi() {
+  double height = 3.67676;
+  double weight = 69.9;
+  double bmi = (height ~/ weight) * 100;
+  print("BMI is $bmi");
 }
 
 void main() {
   print("Something Great today");
   calculate();
   grading();
+  bmi();
 }
