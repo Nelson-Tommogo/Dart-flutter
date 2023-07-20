@@ -11,19 +11,19 @@ void calculate() {
 void grading() {
   print("Enter Unit1 Scores");
   int unit1 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit2 Scores");
+  print("Enter Unit2 Scores");
   int unit2 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit3 Scores");
+  print("Enter Unit3 Scores");
   int unit3 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit4 Scores");
+  print("Enter Unit4 Scores");
   int unit4 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit5 Scores");
+  print("Enter Unit5 Scores");
   int unit5 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit6 Scores");
+  print("Enter Unit6 Scores");
   int unit6 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit7 Scores");
+  print("Enter Unit7 Scores");
   int unit7 = int.parse(stdin.readLineSync()!);
-    print("Enter Unit8 Scores");
+  print("Enter Unit8 Scores");
   int unit8 = int.parse(stdin.readLineSync()!);
   print("Enter Unit9 Scores");
   int unit9 = int.parse(stdin.readLineSync()!);
@@ -42,9 +42,18 @@ void bmi() {
   print("BMI is $bmi");
 }
 
+void forloop() {
+  // int total = 0;
+  // int i =total;
+  // for(int i=0,i<10, i++){
+
+  // }
+}
+
 void main() {
   print("Something Great today");
   calculate();
   grading();
   bmi();
+  forloop();
 }
