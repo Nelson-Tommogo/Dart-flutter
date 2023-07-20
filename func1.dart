@@ -23,6 +23,9 @@ void grading() {
   int gpa = (avarage ~/ 20);
   print("total marks is $total, Average is $avarage, and GPA is $gpa");
 }
+void bmi(){
+  
+}
 
 void main() {
   print("Something Great today");
