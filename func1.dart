@@ -20,7 +20,7 @@ void grading() {
   int total =
       unit9 + unit8 + unit7 + unit6 + unit5 + unit4 + unit3 + unit2 + unit1;
   int avarage = (total ~/ 9);
-  int gpa = (avarage ~/ 10);
+  int gpa = (avarage ~/ 20);
   print("total marks is $total, Average is $avarage, and GPA is $gpa");
 }
 
